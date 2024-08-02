@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Bootstrap Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container-fluid bg-lightTheme">
+        <div class="container-fluid container-md">
+            <nav class="navbar navbar-dark navbar-expand-lg justify-content-evenly px-5">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="signin-btn" href="#home">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="freetrial-btn ml-1" href="#about">Start free trial</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>    
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="banner-container">
+        <div class="container">
+            <div class="row align-items-center text-light">
+                <div class="col-12 col-lg-6 pt-5">
+                    <h5 class="d-flex align-items-center">
+                        <i class='bx bxs-star font-icon text-light'></i>
+                        Powered by AI
+                    </h5>
+                    <h1 class="bnr-head">Automatically grow & monetise your facebook page while you sleep</h1>
+                    <p>
+                        Schedule social content in seconds, plan campaigns effectively,collaborate with your teams effortlessly, and measure the performance timely with SocialPilot.
+                    </p>
+                    <a href="#about" class="btn btn-primary bnr-btn">Start Free Trial</a>
+                    <a href="#about" class="btn bnr-btn btn-light">Watch Demo</a>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+        </div>
+        <div class="shape-div">
+            <img src="../src/assets/images/circle.svg">
+        </div>
+    </section>
+
+    <!-- Engagements -->
+    <div class="container-fluid bg-jean position-relative">
+        <div class="row text-center text-light">
+            <div class="col-6 col-lg-3 border-right-1 border-bottom-1">
+                <div class="content p-4">
+                    <i class='font-icon banner bx bxs-widget'></i>
+                    <h2>Auto Fetch</h2>
+                    <p>Simply paste Rss feed url to auto fetch the feeds.</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 border-right-1 border-bottom-1">
+                <div class="content p-4">
+                    <i class='font-icon banner bx bx-rss'></i>
+                    <h2>Auto Schedule</h2>
+                    <p>Select and save post times for your Rss feeds.</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 border-right-1 border-bottom-1">
+                <div class="content p-4">
+                    <i class='font-icon banner bx bx-scatter-chart'></i>
+                    <h2>Select Page</h2>
+                    <p>Post Rss feeds on unlimiated pages.</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 border-right-1 border-bottom-1">
+                <div class="content p-4">
+                    <i class='font-icon banner bx bxs-shield-alt-2'></i>
+                    <h2>Auto Post On Facebook</h2>
+                    <p>Your Rss feeds get Scheduled and published on facebook page automatically.</p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-div reverse">
+            <img src="../src/assets/images/circle.svg">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-light">
+        <div class="container">
+            <h5 class="d-flex align-items-center">
+                <i class='bx bx-sort font-icon font-arch'></i>
+                Features
+            </h5>
+            <h1>Create Campaigns</h1>
+            <p>Save your most viral website links and autopost them on your facebook pages.</p>
+            <div class="row py-5">
+                <div class="col-12 col-md-6">
+                    <ul class="feature-camp">
+                        <li>
+                            <h3>- Add Campaigns</h3>
+                            <p>Save your viral links in campaigns and post them automatically on your facebook page.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>- Link Google Analytics</h3>
+                            <p>You can link your domain's google analytics with adublisher effortless.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>- Traffic Summary</h3>
+                            <p>Check and filter traffic summary of each campaign by country, affiliates and more.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>- Auto Post Campaigns On Facebook</h3>
+                            <p>Link your facebook page with adublisher to autopost your campaigns on your facebook page.
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-camp">Learn more</button>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <img src="../src/assets/images/campaign-map.jpg" class="img-w-100 w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Demo Section -->
+    <div id="subscribe">
+        <div class="container-fluid bg-light py-5">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-12 col-lg-10 bg-lighter text-dark polygon-container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-4">
+                            <h2 class="d-flex fs-head">
+                                <img src="../src/assets/images/intouch.png" class="intouch-img">
+                                Watch A Quick Demo
+                            </h2>
+                            <p class="fs-18">
+                                Welcome to adublishers! Here, you'll get an exclusive look into our powerful features and the seamless user experience of our social media marketing platform. Our demo video will guide you through the core functionalities, showcasing how our tool can revolutionize the way you manage your social media campaigns and projects.
+                            </p>
+                            <button class="btn btn-primary demo-btn">Watch more videos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="py-5">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Blog Post 1</h3>
+                    <p>Summary of blog post 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Blog Post 2</h3>
+                    <p>Summary of blog post 2.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Blog Post 3</h3>
+                    <p>Summary of blog post 3.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonial" class="container-fluid container-md position-relative py-5">
+        <h5 class="d-flex align-items-center">
+            <i class='bx bxs-bar-chart-alt-2 font-icon font-zyne'></i>
+            Testimonials
+        </h5>
+        <h1>Client's Feedback</h1>
+        <p>Save your most viral website links and autopost them on your facebook pages.</p>
+        <div class="testimonial-slider">
+            <div class="testimonial-slides">
+                <div class="testimonial-slide">
+                    <div class="client-detail">
+                        <div class="client-avatar">
+                            <img src="../src/assets/images/avatar1.png" alt="">
+                        </div>
+                        <div class="client-info">
+                            <p>Jane Doe</p>
+                            <span>CEO of Example Corp</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text fs-15 text-light">"I haven't seen a mixture of such amazing features on any other platform. Organically growing my facebook page while not working so hard for it has given me the immense satisfaction."</p>
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="client-detail">
+                        <div class="client-avatar">
+                            <img src="../src/assets/images/avatar2.png" alt="">
+                        </div>
+                        <div class="client-info">
+                            <p>Jane Doe</p>
+                            <span>CEO of Example Corp</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text fs-15 text-light">"I have been a permanent member since i started in 2017. What i really like about Adublisher is that its so easy to use and basically it helps me to do everything on autopilot."</p>
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="client-detail">
+                        <div class="client-avatar">
+                            <img src="../src/assets/images/avatar3.png" alt="">
+                        </div>
+                        <div class="client-info">
+                            <p>Jane Doe</p>
+                            <span>CEO of Example Corp</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text fs-15 text-light">I have been using Adublisher from past 2 years. Since then i have been able to successfully grow many of my facebook pages. What i really like as Social media manager is the ease to schedule content for months in advance in minutes.</p>
+                    <div class="testimonial-rating">
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-warning'></i>
+                        <i class='bx bxs-star text-light'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+        </div>
+        <div class="navigate-btn">
+            <button class="slider-nav prev">&#10094;</button>
+            <button class="slider-nav next">&#10095;</button>
+        </div>
+    </section>
+    
+
+
+    <section class="container-fluid w-75 my-5" id="membership">
+        <h5 class="d-flex align-items-center pt-5">
+            <i class='bx bx-user-plus font-icon font-zyne'></i>
+            Membership
+        </h5>
+        <h1>Maximize your earnings</h1>
+        <p class="pb-5">You Deserve better, You Deserve Adublisher</p>
+        <div class="row align-items-center">
+            <!-- Basic Plan -->
+            <div class="col-12 col-md-6 col-lg-3 m-0 p-0">
+                <div class="pricing-column">
+                    <h2>Basic</h2>
+                    <p class="price">$19/month</p>
+                    <hr>
+                    <button class="btn price-btn">Upgrade</button>
+                    <ul class="pricing-features">
+                        <li class="nav-link"><i class='bx bx-check'></i>10 Bulk images to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>10 Campaign management</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>2 Affiliate accounts</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>RSS feed to facebook</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Auto schedule campaigns to facebook</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Traffic Summary</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Manage ppc rateS</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Connect Google Analytics</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Redirect domain for affiliates</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Standard Plan -->
+            <div class="col-12 col-md-6 col-lg-3 m-0 p-0">
+                <div class="pricing-column demand">
+                    <h2>Plus</h2>
+                    <p class="price">$39/month</p>
+                    <hr>
+                    <button class="btn price-btn">Start Free Trial</button>
+                    <ul class="pricing-features">
+                        <li class="nav-link"><i class='bx bx-check'></i>5000 Bulk images to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>50 Campaign management</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>5 Affiliate accounts</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>RSS feed to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Auto schedule campaigns to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Traffic Summary</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Manage ppc rateS</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Connect Google Analytics</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Redirect domain for affiliates</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Premium Plan -->
+            <div class="col-12 col-md-6 col-lg-3 m-0 p-0">
+                <div class="pricing-column">
+                    <h2>Professional</h2>
+                    <p class="price">$59/month</p>
+                    <hr>
+                    <button class="btn price-btn">Upgrade</button>
+                    <ul class="pricing-features">
+                        <li class="nav-link"><i class='bx bx-check'></i>1000 Bulk images to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>100 Campaign management</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>10 Affiliate accounts</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>RSS feed to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Auto schedule campaigns to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Traffic Summary</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Manage ppc rateS</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Connect Google Analytics</li>
+                        <li class="nav-link"><i class='bx bx-x'></i>Redirect domain for affiliates</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Elite Plan -->
+            <div class="col-12 col-md-6 col-lg-3 m-0 p-0">
+                <div class="pricing-column">
+                    <h2>Premium</h2>
+                    <p class="price">$99/month</p>
+                    <hr>
+                    <button class="btn price-btn">Upgrade</button>
+                    <ul class="pricing-features">
+                        <li class="nav-link"><i class='bx bx-check'></i>20000 Bulk images to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>200 Campaign management</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>20 Affiliate accounts</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>RSS feed to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Auto schedule campaigns to facebook</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Traffic Summary</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Manage ppc rateS</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Connect Google Analytics</li>
+                        <li class="nav-link"><i class='bx bx-check'></i>Redirect domain for affiliates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container p-5">
+            <div class="row align-items-center">
+                <!-- Form Section -->
+                <div class="col-md-6">
+                    <div class="contact-heading">
+                        <h5 class="d-flex align-items-center">
+                            <i class='bx bx-help-circle text-danger font-icon'></i>
+                            Need Help
+                        </h5>
+                        <h2>Contact Us</h2>
+                        <p>Send us an email or simply start a chat.</p>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control resize-disable" id="message" rows="4" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary msg-btn">Send Message</button>
+                    </form>
+                </div>
+                <!-- Content Section -->
+                <div class="col-md-6">
+                    <div class="contact-data">
+                        <h3>Address</h3>
+                        <div class="contact-info">
+                            <i class='bx bx-map'></i>
+                            <span>Street 1234 ,
+                                Near XYZ Plant , <br>
+                                XYZ Company
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-data">
+                        <h3>Phone</h3>
+                        <div class="contact-info">
+                            <i class='bx bxs-phone'></i>
+                            <span>4500-1020198</span>
+                        </div>
+                    </div>
+                    <div class="contact-data">
+                        <h3>Email</h3>
+                        <div class="contact-info">
+                            <i class='bx bx-envelope'></i>
+                            <span>adublishers@united.co</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="subscribe">
+        <div class="container-fulid p-3">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h5 class="d-flex align-items-center pt-5">
+                            <i class='bx bx-trending-up font-icon font-arch'></i>
+                            Subscribe
+                        </h5>
+                        <h1>Become a subscriber</h1>
+                        <p class="pb-5 fs-15">
+                            After becoming a subscriber, users typically enjoy a range of enhanced benefits. These may include access to premium features such as advanced tools and customization options, higher usage limits, and exclusive content. Subscribers often receive priority support, an ad-free experience, and additional security measures. 
+                        </p>
+                        <div class="input-group w-100">
+                            <input type="text" class="text-field" placeholder="Submit your email...">
+                            <button class="btn btn-primary">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FAQ Section -->
+     <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="faqs-header">
+                <h5 class="d-flex align-items-center">
+                    <i class='bx bx-sort font-icon font-jean'></i>
+                    Explore Our FAQ's
+                </h5>
+                <h2>Frequently Asked Questions</h2>
+                <h5>Here is a list of most frequently asked questions, you'll find answers to the most common questions about our services. If you need further assistance, please don't hesitate to contact us.</h5>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faq1">
+                        <h5 class="mb-0">
+                            <a class="faq-link" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <span class="question-text">Do You Offer A Free Trial?</span>
+                                <span class="plus-sign">+</span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, you get a free trial for 7 days. During that time you can test each feature that Adublisher offers.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq2">
+                        <h5 class="mb-0">
+                            <a class="faq-link collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <span class="question-text">Can I Get Refund If I Am Not Satisfied?</span>
+                                <span class="plus-sign">+</span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            If you are not satisfied with your membership, you can cancel your membership anytime and get a full refund.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq3">
+                        <h5 class="mb-0">
+                            <a class="faq-link collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <span class="question-text">How Are We Better Than Other Platforms, Why Should I Subscribe?</span>
+                                <span class="plus-sign">+</span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Adublisher offers a very unique set of features. We take care of each aspect of your business. From automatic scheduling of your Facebook page to organic increase in your page likes to monetizing your Facebook page on auto also. We offer you all those tools. Simply link your Facebook page and let Adublisher do the rest for you.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq4">
+                        <h5 class="mb-0">
+                            <a class="faq-link collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <span class="question-text">How Can I Get a Refund?</span>
+                                <span class="plus-sign">+</span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <span class="text-muted">&copy; 2015–2024 TRUE BREATHE MEDIA (SMC-PRIVATE) LIMITED - Shop B 19, Arcade Plaza, Sufi City, Mandi Bahauddin, Punjab.</span>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-links">
+                        <div class="foot-item">
+                            <a href="#" class="foot-link">Terms of Services</a>
+                        </div>
+                        <div class="hr-line">|</div>
+                        <div class="foot-item">
+                            <a href="#" class="foot-link">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../src/assets/js/main.js"></script>
+</body>
+</html>

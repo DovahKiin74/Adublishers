@@ -1,0 +1,54 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#feedbacks {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.feedback {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.client-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.feedback-box {
+    flex: 1;
+}
+
+.stars {
+    color: #f5c518;
+    font-size: 1.2rem;
+}
+
+.star {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.card-text {
+    font-style: italic;
+    color: #555;
+}
+
+.blockquote-footer {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+blockquote-footer cite {
+    font-style: normal;
+    color: #333;
+}

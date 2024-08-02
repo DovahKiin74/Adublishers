@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #313131;
+            margin: 0;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+            overflow: hidden;
+            background-color: #313131;
+            border: none;
+        }
+        .card-body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 0px 8px rgba(119, 119, 119, 0.2);
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+        .card-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .data-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-content">
+                <h4>Interactive Card</h4>
+                <p>This card moves based on mouse position.</p>
+                <div class="data-info">
+                    <div id="x-coord">X: 0</div>
+                    <div id="y-coord">Y: 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelector('.card-body');
+        const xCoord = document.getElementById('x-coord');
+        const yCoord = document.getElementById('y-coord');
+
+        card.addEventListener('mousemove', (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const moveX = ((x - centerX) / centerX) * 10;
+            const moveY = ((y - centerY) / centerY) * -10;
+
+            card.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg)`;
+
+            // Update cursor position display
+            xCoord.textContent = `X: ${Math.round(x)}`;
+            yCoord.textContent = `Y: ${Math.round(y)}`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        });
+    </script>
+</body>
+</html>
